@@ -12,6 +12,10 @@ module.exports = {
 				loader: 'ng-annotate'
 			},
 			{
+				test: /src\/lang.*\.json$/,
+				loader: 'translate'
+			},
+			{
 				test: /\.css$/,
 				loader: 'style!css'
 			},

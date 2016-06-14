@@ -19,12 +19,18 @@ function appConfig($urlRouterProvider, chatServiceProvider, userResourceProvider
     $authProvider.google({
         clientId: '1004489526825-32qv25037p5b6ffggb2tev7ieoru3top.apps.googleusercontent.com'
     });
-
+/*
     $translateProvider.translations('en', {
         LOG_IN: "Log In",
         PLEASE_LOG_IN: "Please log in",
         GOOGLE_ACCOUNT: "Google account",
         GITHUB_ACCOUNT: "Github account",
-    });
-    $translateProvider.preferredLanguage('en');
+        ONLINE_USERS: "Online users",
+        NAME_SURNAME: "Jméno Příjmení"
+    });*/
+
+    //require('./lang/en.json');
+    var json = require("./lang/en.json");
+    console.log(json)
+    //$translateProvider.preferredLanguage('en');
 }
