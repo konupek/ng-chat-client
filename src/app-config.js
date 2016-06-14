@@ -1,6 +1,6 @@
 module.exports = appConfig;
 
-function appConfig($urlRouterProvider, chatServiceProvider, userResourceProvider, $authProvider) {
+function appConfig($urlRouterProvider, chatServiceProvider, userResourceProvider, $authProvider, $translateProvider) {
     'use strict';
     'ngInject';
 
@@ -19,4 +19,9 @@ function appConfig($urlRouterProvider, chatServiceProvider, userResourceProvider
     $authProvider.google({
         clientId: '1004489526825-32qv25037p5b6ffggb2tev7ieoru3top.apps.googleusercontent.com'
     });
+
+    $translateProvider.translations('en', {
+         PLEASE_LOG_IN: 'Hello there, This is my awesome app!',
+    });
+    $translateProvider.preferredLanguage('en');
 }

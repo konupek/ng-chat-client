@@ -9,9 +9,10 @@ var chatService = require('./chat-service.js');
 var userResource = require('../user/user-resource.js');
 var roomController = require('./room/room-controller.js');
 var autoscrollDirective = require('./app-autoscroll.js');
+var ngTranslate = require('angular-translate/dist/angular-translate.js');
 
 module.exports = angular
-    .module('app.chat', [ngMaterial, uiRouter, satellizer, i18n])
+    .module('app.chat', [ngMaterial, uiRouter, satellizer, i18n, ngTranslate])
     .provider('chatService', chatService)
     .provider('userResource', userResource)
     .controller('roomController', roomController)
