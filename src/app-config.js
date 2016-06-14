@@ -21,7 +21,10 @@ function appConfig($urlRouterProvider, chatServiceProvider, userResourceProvider
     });
 
     $translateProvider.translations('en', {
-         PLEASE_LOG_IN: 'Hello there, This is my awesome app!',
+        LOG_IN: "Log In",
+        PLEASE_LOG_IN: "Please log in",
+        GOOGLE_ACCOUNT: "Google account",
+        GITHUB_ACCOUNT: "Github account",
     });
     $translateProvider.preferredLanguage('en');
 }
